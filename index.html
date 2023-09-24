@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madinah Salam</title>
+    <style>
+      * {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-size: cover;
+      }
+      .wrapper {
+        width: 1100px;
+        margin: auto;
+        position: relative;
+      }
+      .logo a {
+        font-size: 50px;
+        font-weight: 800;
+        float: left;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: seagreen;
+      }
+
+      .menu {
+        float: right;
+      }
+      nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background: #ffffff;
+        border-bottom: solid seagreen;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav ul li {
+        float: left;
+      }
+
+      nav ul li a {
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px 16px 0px 16px;
+        text-decoration: none;
+        z-index: 1;
+        background: #ffffff;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      section {
+        margin: auto;
+        display: flex;
+        margin-bottom: 50px;
+      }
+      .kolom {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .kolom .deskripsi {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "comic sans ms";
+        color: seagreen;
+      }
+      h2 {
+        font-family: "comic sans ms";
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: seagreen;
+        width: 100%;
+        line-height: 50px;
+      }
+      a.tbl-biru {
+        background: dodgerblue;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      a.tbl-biru:hover {
+        background: palevioletred;
+        text-decoration: none;
+      }
+      a.tbl-pink {
+        background: palevioletred;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        color: purple;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      a.tbl-pink:hover {
+        background: dodgerblue;
+        text-decoration: none;
+      }
+      p {
+        margin: 10px 0px 10px 0px;
+        padding: 10px 0px 10px 0px;
+      }
+      .tengah {
+        text-align: center;
+        width: 100%;
+      }
+      .pengajar-list {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .kartu-pengajar {
+        width: 20%;
+        margin: 0 auto;
+      }
+
+      .kartu-pengajar img {
+        width: 30%;
+        border-radius: 60%;
+      }
+      .kartu-pengajar p {
+        font-family: "comic sans ms";
+        font-weight: 600;
+        font-size: 13px;
+        text-align: center;
+        color: seagreen;
+      }
+
+      .program-list {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .kartu-program {
+        width: 20%;
+        margin: 0 auto;
+      }
+      .kartu-program img {
+        width: 30%;
+        border-radius: none;
+      }
+      .kartu-program p {
+        color: seagreen;
+      }
+      #contact {
+        background: lightskyblue;
+        padding: 50px 0px 50px 0px;
+      }
+      .footer {
+        width: flex;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      .footer-section {
+        width: 20%;
+        margin: 0 auto;
+      }
+      h3 {
+        font-family: "comic sans ms";
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: seagreen;
+        width: 100%;
+        line-height: 50px;
+      } 
+
+      #copyright {
+        text-align: center;
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+        margin-top: 50px;
+      }
+      @media screen and (max-width: 991.98px) {
+        .wrapper{
+            width: 90%;
+        }
+        .logo a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        nav .menu {
+            width: 100%;
+            margin: 0;  
+        }
+        nav .menu ul {
+            text-align: center;
+            margin: auto;
+            line-height: 50px;
+        }
+        nav .menu ul li {
+            display: inline-block;
+            float: none;
+        }
+        section {
+            display: block; 
+        }
+        section img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .kartu-pengajar {
+            width: 50%;
+        }
+        .kartu-program {
+            width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="">Madinah Salam</a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentangkami">Tentang Kami</a></li>
+            <li><a href="#pengajar">Pengajar</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="" class="tbl-biru">Daftar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <!-- untuk home -->
+      <section id="home">
+        <img src="gambar/logo2.png" />
+        <div class="kolom">
+          <p class="deskripsi">Kenapa harus belajar di Madinah Salam ??</p>
+          <h2>Sesuai Al-Qur'an dan As-Sunnah</h2>
+          <p>Belajarnya flexibel bisa kapan saja</p>
+          <p><a href="" class="tbl-pink">Mari belajar bersama kami</a></p>
+        </div>
+      </section>
+
+      <!-- untuk tentang kami  -->
+      <section id="tentangkami">
+        <div class="kolom">
+          <p class="deskripsi">Tentang Kami</p>
+          <h2>Belajar Full Online</h2>
+          <p>
+            Madinah Salam adalah sebuah yayasan yang bergerak di bidang dakwah
+            dan pendidikan agama sesuai Al-Qur'an dan Sunnah berbasis online.
+          </p>
+          <p>
+            Sudah terdaftar sebanyak 770 mahasiswa S1 Resmi semester lalu dan
+            310 mahasiswa untuk semester depan.
+          </p>
+          <p><a href="" class="tbl-biru">Pelajari Lebih lanjut</a></p>
+        </div>
+        <img src="gambar/ms_4.jpeg" />
+      </section>
+
+      <!-- untuk pengajar -->
+      <section id="pengajar">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Profil Pengajar Kami</p>
+            <h2>Pengajar</h2>
+            <p>
+              Pengajar yang berkompeten di bidangnya, lulusan terbaik
+              universitas LIPIA, UIM, King Saud University, dan Universitas
+              ternama lainnya di Indonesia
+            </p>
+          </div>
+          <div class="pengajar-list">
+            <div class="kartu-pengajar">
+              <img src="gambar/ms_6.png" />
+              <p>Ustadz Saiful Awwal, Lc.</p>
+            </div>
+            <div class="kartu-pengajar">
+              <img src="gambar/ms_7.jpeg" />
+              <p>Ustadz Arby Fadhly Nurjasmi, M.A.</p>
+            </div>
+
+            <div class="kartu-pengajar">
+              <img src="gambar/ms_10.jpeg" />
+              <p>Ustadz Lukmanul Hakim, M.A.</p>
+            </div>
+            <div class="kartu-pengajar">
+              <img src="gambar/ms_9.jpeg" />
+              <p>Ustadz Hengki Dian Putra, Lc.</p>
+            </div>
+            <div class="kartu-pengajar">
+              <img src="gambar/ms_6.png" />
+              <p>Ustadz Rahmat Jaya Kurnia, Lc.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- untuk program -->
+      <section id="program">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Program</p>
+            <h2>Program Unggulan</h2>
+            <p>
+              Dengan banyaknya minat peserta alhamdulillah Madinah Salam
+              mempunyai beberapa Program unggulan, diantaranya :
+            </p>
+          </div>
+          <div class="program-list">
+            <div class="kartu-program">
+              <img src="gambar/ms_2.jpeg" />
+              <p>Program S1 Madinah Salam</p>
+            </div>
+            <div class="kartu-program">
+              <img src="gambar/ms_1.jpeg" />
+              <p>Program Diploma Bahasa Arab</p>
+            </div>
+            <div class="kartu-program">
+              <img src="gambar/ms_4.jpeg" />
+              <p>Program Diploma Ilmi</p>
+            </div>
+            <div class="kartu-program">
+              <img src="gambar/ms_5.jpeg" />
+              <p>Program Diploma Qur'an</p>
+            </div>
+            <div class="kartu-program">
+              <img src="gambar/ms_2.jpeg" />
+              <p>Program Dakwah</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="contact">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer-section">
+            <h3>Madinah Salam</h3>
+            <p>
+              Madinah Salam adalah sebuah yayasan yang bergerak di bidang dakwah
+              dan pendidikan agama sesuai Al-Qur'an dan Sunnah berbasis online
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>About</h3>
+            <p>
+              Madinah Salam adalah sebuah yayasan yang bergerak di bidang dakwah
+              dan pendidikan agama sesuai Al-Qur'an dan Sunn
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              Jalan Pagelarang Raya, RT/RW 001/02, Kelurahan Setu, Kecamatan Cipayung,</p>
+          </div>
+          <div class="footer-section">
+            <h3>Sosial</h3>
+            <p>
+              <b>Youtube:</b> Madinah Salam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy ; 2023. <b>Madinah Salam</b> All Right Reserved.
+        </div>
+    </div>
+  </body>
+</html>
